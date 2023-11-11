@@ -1,0 +1,14 @@
+header { /* Propiedades header */
+    height: 100vh;
+    background: url(/img/logo/Logo-consoleye.png); /* Agrego imagen logo de la pagina */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50vw;
+} /* Termina propiedades header */
+
+header > div { /* Propiedades para capa header */
+    width: 90%;
+    height: 80%;
+    background-color: var(--color--negro-transparente);
+} 
+

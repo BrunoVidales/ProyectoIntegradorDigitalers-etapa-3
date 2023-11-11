@@ -1,0 +1,198 @@
+@import 'bootstrap'; /* Importamos bootstrap */
+
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+@font-face {
+    font-family: fontPixel;
+    src: url(/img/font/Big\ Pixel\ demo.otf);
+} /* ! FUENTES */
+
+:root { /* ! Variables de color */
+    /* color */
+    --color-verde: #94e475;
+    --color-verde-clarito: #b4f08d;
+    --color--negro-transparente:  rgba(34, 34, 34, 0.329);
+    --color--negro--nav: rgba(24, 24, 24, 0.575);
+    --color--blanco: #ffffff;
+    /* background */
+    --background: /* linear-gradient(180deg, #822779 0%, rgba(99, 10, 254, 0.00) 100%) */ #ddd;
+}
+
+/* ! Estilos generales */
+.nosotros section:nth-of-type(2) > div > h2,
+label {color: var(--color--blanco);}
+
+h1,
+h2 {font-size: 1.6rem; text-align: center;}
+
+h1,
+h2,
+h3,
+span,
+footer > p {
+    font-weight: 700;
+}
+
+main  div  h1 span, 
+.consolas-main section  div  h2 { 
+    font-weight: 400;
+}
+
+form > h3,
+hr { color: var(--color-verde);}
+
+ul {
+    list-style: none;
+}
+
+/* ! Termina estilos generales */
+
+/* ! Estilos para el body */
+body {
+    background-color: var(--color--blanco);
+    font-family: 'Mulish', sans-serif; 
+    font-weight: 300; background: var(--background);
+    background-repeat: no-repeat;
+} 
+/* ! Termina los estilos para el body*/
+
+
+ul .navbar-nav { /* Propiedades de la lista */
+    align-items: center;
+    
+}
+a { /* Propiedeas del enlace dentro de la lista (NAV) */
+    font-family: fontPixel;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--color-verde-clarito);
+}
+
+.boton-nav { /* Propiedades del botón de navegación */
+    position: relative;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.boton-nav span { 
+    position: absolute;
+    background-color: var(--color-verde-clarito);
+    transition: 0.3s;
+}
+.boton-nav span:nth-child(1) {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+.boton-nav span:nth-child(2) {
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+.boton-nav span:nth-child(3) {
+    width: 1px;
+    height: 50%;
+    left: 0;
+    bottom: -100%;
+}
+.boton-nav span:nth-child(4) {
+    width: 1px;
+    height: 50%;
+    right: 0;
+    top: -100%;
+}
+.boton-nav:hover span:nth-child(1) {
+    left: 0;
+}
+.boton-nav:hover span:nth-child(2) {
+    right: 0;
+}
+.boton-nav:hover span:nth-child(3) {
+    bottom: 0;
+}
+.boton-nav:hover span:nth-child(4) {
+    top: 0;
+} /* Termina propiedades del boton de navegacion */
+
+@media (max-width: 991px) { /* Estilos para pantallas más pequeñas */
+    ul {
+        margin: 0;
+        display: flex;
+        align-items: start;
+        padding: 5px 0;
+        width: 100%;
+    }
+    li {
+        margin-top: 10px;
+    }
+    .icono-bienvenido {
+        display: none;
+    }
+}
+
+/* ! Estilos  en general  (footer, tarjetas)*/
+@media(max-width: 768px) {
+    .redes { 
+        transform: none;
+        transition: none;
+        animation: none;
+    }   
+    .redes:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+@media(max-width: 767px) {
+    .redes button:hover,
+    .carrito-main section  div  ul  a:hover {
+        transform: none;
+    }   
+
+    .tarjetas img {
+        width: 65px;
+    }
+
+    footer > ul {
+        height: 40px;
+        transform: none;
+        box-shadow: none;
+        transition: none;
+        gap: 1rem;
+    }
+    
+    footer > ul:hover {
+        transform: none;
+    }
+}
+
+
+/* Estilos para el boton CAMBIO DE COLOR */
+.switch { /* Creamos el boton */
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border: 2px solid var(--color-verde-clarito);
+    border-radius: 100px;
+    background-color: var(--background);
+}
+
+.ul-modo .switch::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: var(--color-verde-clarito);
+    left: 0;
+    right: unset;
+    margin: 1px;
+}

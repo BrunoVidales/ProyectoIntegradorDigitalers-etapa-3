@@ -1,0 +1,58 @@
+.inicio-cartas  .carta {
+    border: 3px solid var(--color-verde-clarito);
+    box-shadow: none;
+    transition: .3s ease;
+}
+
+.carta-1:hover {
+    transform: translate(-5%, -5%);
+    box-shadow: 10px 15px 10px var(--color--negro-transparente);
+}
+.carta-2:hover {
+    transform: translate(5%, -5%);
+    box-shadow: -10px 15px 10px var(--color--negro-transparente);
+    
+}
+.carta-3:hover {
+    transform: translate(-5%, 5%);
+    box-shadow: 10px -15px 10px var(--color--negro-transparente);
+    
+}
+.carta-4:hover {
+    transform: translate(5%, 5%);
+    box-shadow: -10px -15px 10px var(--color--negro-transparente);
+}
+
+.card-body > .btn-inicio {
+    color: var(--color--negro-transparente);
+    background-color: var(--color-verde-clarito);
+    border: 1px solid var(--color-verde-clarito);
+    transition: .5s;
+}
+
+.card-body > .btn-inicio:hover {
+    color: var(--color--blanco);
+    background-color: var(--color-verde);
+}
+
+
+@media(max-width: 767px) {
+
+    .carta-1:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    .carta-2:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    .carta-3:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    .carta-4:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+

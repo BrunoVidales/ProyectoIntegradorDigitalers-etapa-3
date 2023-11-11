@@ -1,0 +1,7 @@
+/* ! Propiedades para nosotros.html */
+.section-nosotros:nth-of-type(1) > div:nth-child(1), .section-nosotros:nth-of-type(2) > div:nth-child(1) {
+    background-color: var(--color--negro-transparente);
+    border-radius: 15px;
+    height: 5rem;
+    color: var(--color--blanco);
+}

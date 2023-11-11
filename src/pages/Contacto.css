@@ -1,0 +1,52 @@
+form {
+    background-color: var(--color--blanco);
+    border: 2px solid var(--color-verde-clarito);
+}
+
+form > h3 {
+    font-size: clamp(1.5vw, 5vw, 3rem);
+    font-family: fontPixel;
+}
+
+.contacto label {
+    color: var(--color--negro-transparente);
+    font-weight: 700;
+}
+
+
+form>input {
+    text-align: center;
+    color: var(--color--negro-transparente);
+    font-size: 1.2rem;
+    border: var(--color--blanco);
+}
+
+textarea,
+input {
+    background-color: var(--color--negro-transparente);
+}
+
+/* estilos para los botones de contacto */
+.btn-form { 
+    width: 100px;
+    font-size: 1.1rem;
+    border: none;
+    transform: translateY(0);
+    transition: .3s;
+}
+
+.clarito-form { /* btn enviar */
+    background-color: var(--color-verde);
+}
+
+.oscuro-form { /* btn borrar */
+    background-color: var(--color--negro-transparente);
+}
+
+.clarito-form:hover {
+    background-color: var(--color--negro-transparente);
+}
+
+.oscuro-form:hover {
+    background-color: var(--color-verde);
+}

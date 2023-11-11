@@ -1,0 +1,19 @@
+.btn-consolas {
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    border: 1px solid var(--color-verde);
+    color: var(--color--negro-transparente);
+    background-color: var(--color-verde-clarito);
+    transition: .3s;
+}
+.btn-consolas:hover {
+    color: var(--color--blanco);
+    background-color: var(--color-verde);
+}
+
+.consolas-img{
+    height: 200px;
+}
