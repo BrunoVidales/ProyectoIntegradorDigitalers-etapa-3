@@ -5,7 +5,13 @@ import './Carrito.css'
 const Carrito = () => {
 
 
-  const {carrito, cantidadArticulosCarritoContext, totalFinal} = useContext(CarritoContext)
+  const {
+    carrito, 
+    cantidadArticulosCarritoContext,  
+    precioTotalArticulosCarritoContext, 
+    guardarCarritoContext,
+    calculoDeIvaCarritoContext
+  } = useContext(CarritoContext)
 
   return (
     <>
@@ -23,7 +29,7 @@ const Carrito = () => {
               {
 
                 carrito && carrito.map(item => (
-                  <ItemCarrito key={item.id} item={item} />
+                  <ItemCarrito key={item.id} itemProducto={item} />
                 ))
 
               }
@@ -36,7 +42,7 @@ const Carrito = () => {
                   <ul className="ul-carrito  list-group list-group-flush ">
                     <li className=" d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                       Productos
-                      <span id="sub-total"></span>
+                      <span id="sub-total">${precioTotalArticulosCarritoContext().toFixed(2)}</span>
                     </li>
                     <li className=" d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                       Envío
@@ -46,16 +52,22 @@ const Carrito = () => {
                       <div>
                         <strong>IVA</strong>
                       </div>
-                      <span id="iva"></span>
+                      <span id="iva">${calculoDeIvaCarritoContext(precioTotalArticulosCarritoContext()).toFixed(2)}</span>
                     </li>
                     <li className=" d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                       <div>
                         <strong>Total de la compra</strong>
                       </div>
-                      <span>{totalFinal.toFixed(2)}</span>
+                      <span>${(precioTotalArticulosCarritoContext() + calculoDeIvaCarritoContext(precioTotalArticulosCarritoContext())).toFixed(2)}</span>
                     </li>
                   </ul>
-                  <button type="button" className="btn btn-success btn-lg btn-block mt-4">Ir a pagar</button>
+                  <button 
+                    type="button" 
+                    className="btn btn-success btn-lg btn-block mt-4"
+                    onClick={guardarCarritoContext}
+                  >
+                      Procesar compra
+                  </button>
                 </div>
               </div>
             </div>

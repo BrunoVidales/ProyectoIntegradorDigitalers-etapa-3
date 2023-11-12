@@ -7,7 +7,14 @@ const Alta = () => {
     }, [])
 
   return (
-    <div>Alta</div>
+    <form>
+
+      <input type="text" placeholder='Nombre del producto' />
+      <input type="text" placeholder='Caracteristicas'/>
+      <input type="text" placeholder='Precio' />
+      <input type="text" placeholder='Imagen del producto' />
+
+    </form>
   )
 }
 

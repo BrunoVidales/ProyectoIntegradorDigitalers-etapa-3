@@ -12,7 +12,7 @@ import { get } from "../utils/http";
 const ProductosContext = createContext()
 
 /* 2do paso: El armado del provider */
-const url = import.meta.env.VITE_ENDPOINT_PRODUCTOS;
+const url = 'https://654fd57a358230d8f0cdbd8d.mockapi.io/productos'
 console.log(url);
 
 const ProductosProvider = ({children}) => {
