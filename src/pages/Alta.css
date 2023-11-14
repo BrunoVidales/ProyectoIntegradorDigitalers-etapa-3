@@ -1,0 +1,24 @@
+.alta {
+    border: 3px solid var(--color-verde-clarito);
+}
+
+.alta h2 {
+    font-family: fontPixel;
+    color: var(--color-verde);
+}
+
+.input-alta {
+    width: 400px;
+    margin-bottom: 1rem;
+    border: none;
+    text-align: center;
+}
+
+.alta label {
+    font-weight: 700;
+    text-align: center;
+}
+
+.alta div button {
+    width: 200px;
+}

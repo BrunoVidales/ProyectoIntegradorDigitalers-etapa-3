@@ -13,7 +13,7 @@ import Footer from './components/Footer.jsx'
 import { ProductosProvider } from './contexts/ProductosContext.jsx'
 import Alta from './pages/Alta.jsx'
 import { CarritoProvider } from './contexts/CarritoContext.jsx'
-
+import { ThemeProvider } from './contexts/ThemeContext.jsx'
 
 
 /* Estilos */
@@ -28,65 +28,65 @@ import * as bootstrap from 'bootstrap'
 
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-  
-  <ProductosProvider>
-    
-    <CarritoProvider>
-
-      <BrowserRouter>
+  <ThemeProvider>
+    <ProductosProvider>
       
-        <main className="container-fluid">
-          <Routes>
-            <Route path='/' element={
-            <>
-              <Navbar />
-              <Inicio />
-            </>
-            } />
-            <Route path='/consolas' element={
-            <>
-              <NavbarSecundario />
-              <Consolas />
-            </>
-            } />
-            <Route path='/nosotros' element={
-            <>
-              <NavbarSecundario />
-              <Nosotros />
-            </>
-            } />
-            <Route path='/contacto' element={
-            <>
-              <NavbarSecundario />
-              <Contacto />
-            </>
-            } />
-            <Route path='/alta' element={
+      <CarritoProvider>
+
+        <BrowserRouter>
+        
+          <main className="container-fluid">
+            <Routes>
+              <Route path='/' element={
               <>
-                <NavbarSecundario />
-                <Alta />
+                <Navbar />
+                <Inicio />
               </>
               } />
-            <Route path='/carrito' element={
+              <Route path='/consolas' element={
               <>
                 <NavbarSecundario />
-                <Carrito />
+                <Consolas />
               </>
               } />
-            <Route path='*' element={
-            <>
-              <NavbarSecundario />
-              <NoEncontrada />
-            </>
-            } />
-          </Routes>
-        </main>
-
-        <Footer />
-      
-      </BrowserRouter>
-    </CarritoProvider>
-  </ProductosProvider>
+              <Route path='/nosotros' element={
+              <>
+                <NavbarSecundario />
+                <Nosotros />
+              </>
+              } />
+              <Route path='/contacto' element={
+              <>
+                <NavbarSecundario />
+                <Contacto />
+              </>
+              } />
+              <Route path='/alta' element={
+                <>
+                  <NavbarSecundario />
+                  <Alta />
+                </>
+                } />
+              <Route path='/carrito' element={
+                <>
+                  <NavbarSecundario />
+                  <Carrito />
+                </>
+                } />
+              <Route path='*' element={
+              <>
+                <NavbarSecundario />
+                <NoEncontrada />
+              </>
+              } />
+            </Routes>
+          </main>
+          <Footer />
+        </BrowserRouter>
+      </CarritoProvider>
+    </ProductosProvider>
+  </ThemeProvider>
   
 )

@@ -119,6 +119,12 @@
       "nombre": "S.Dreamcast",
       "precio": 246.12,
       "foto": "SegaDreamcast.jpg"
+    },
+    {
+      "id": 21,
+      "nombre": "hola mundo",
+      "precio": "75.55",
+      "foto": "ps4.jpg"
     }
   ],
   "carrito": [
