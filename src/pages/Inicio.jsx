@@ -12,7 +12,7 @@ const Inicio = () => {
   return (
     <>
 
-      <section className="main-index text-center d-flex rounded-4 align-items-center flex-column p-3"> 
+      <section className="main-index text-center d-flex rounded-4 align-items-center flex-column p-3 bg-light"> 
         <h1>Bienvenido a ConsolEye, tu destino para encontrar las mejores consolas de videojuegos de marcas como <span className="span-chico">Playstation, Xbox, Nintendo y Sega</span>. </h1>
         <p>Aquí podrás explorar y adquirir tus consolas favoritas.</p>
 

@@ -13,7 +13,7 @@ import Footer from './components/Footer.jsx'
 import { ProductosProvider } from './contexts/ProductosContext.jsx'
 import Alta from './pages/Alta.jsx'
 import { CarritoProvider } from './contexts/CarritoContext.jsx'
-import { ThemeProvider } from './contexts/ThemeContext.jsx'
+
 
 
 /* Estilos */
@@ -30,7 +30,7 @@ import * as bootstrap from 'bootstrap'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ThemeProvider>
+  
     <ProductosProvider>
       
       <CarritoProvider>
@@ -87,6 +87,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </BrowserRouter>
       </CarritoProvider>
     </ProductosProvider>
-  </ThemeProvider>
+  
   
 )

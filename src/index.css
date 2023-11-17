@@ -21,7 +21,7 @@
 
 /* ! Estilos generales */
 .nosotros section:nth-of-type(2) > div > h2,
-label {color: var(--color--blanco);}
+label {color: var(--color--negro-transparente);}
 
 h1,
 h2 {font-size: 1.6rem; text-align: center;}
@@ -195,4 +195,13 @@ a { /* Propiedeas del enlace dentro de la lista (NAV) */
     left: 0;
     right: unset;
     margin: 1px;
+}
+
+.ul-modo .switch.active::before {
+    right: 0;
+    left: unset;
+}
+
+.ul-modo .switch.active {
+    background-color: var(--color--blanco);
 }

@@ -3,128 +3,122 @@
     {
       "id": 1,
       "nombre": "Playstation 1",
-      "precio": 75.55,
+      "precio":" 75.55",
       "foto": "ps1.jpg"
     },
     {
       "id": 2,
       "nombre": "Playstation 2",
-      "precio": 115.77,
+      "precio": "115.77",
       "foto": "ps2.jpg"
     },
     {
       "id": 3,
       "nombre": "Playstation 3",
-      "precio": 229.99,
+      "precio": "229.99",
       "foto": "ps3.jpg"
     },
     {
       "id": 4,
       "nombre": "Playstation 4",
-      "precio": 314.99,
+      "precio": "314.99",
       "foto": "ps4.jpg"
     },
     {
       "id": 5,
       "nombre": "Playstation 5",
-      "precio": 499,
+      "precio": "499",
       "foto": "ps5.jpg"
     },
     {
       "id": 6,
       "nombre": "Xbox",
-      "precio": 75.55,
+      "precio": "75.55",
       "foto": "xbox1.jpg"
     },
     {
       "id": 7,
       "nombre": "Xbox 360",
-      "precio": 147.96,
+      "precio": "147.96",
       "foto": "xbox2005.jpg"
     },
     {
       "id": 8,
       "nombre": "Xbox One",
-      "precio": 198.99,
+      "precio": "198.99",
       "foto": "xboxone.jpg"
     },
     {
       "id": 9,
       "nombre": "Xbox One X",
-      "precio": 314.95,
+      "precio": "314.95",
       "foto": "xboxonex.jpg"
     },
     {
       "id": 10,
       "nombre": "Xbox Series X",
-      "precio": 568.99,
+      "precio": "568.99",
       "foto": "xboxseriesx.jpg"
     },
     {
       "id": 11,
       "nombre": "N.Entertainmen",
-      "precio": 79.98,
+      "precio": "79.98",
       "foto": "nintendoEntertainmenSystem.jpg"
     },
     {
       "id": 12,
       "nombre": "N.64",
-      "precio": 118.99,
+      "precio": "118.99",
       "foto": "nintendo64.jpg"
     },
     {
       "id": 13,
       "nombre": "N.GameCube",
-      "precio": 144.94,
+      "precio": "144.94",
       "foto": "nintendoGameCube.jpg"
     },
     {
       "id": 14,
       "nombre": "Wii U",
-      "precio": 284.99,
+      "precio": "284.99",
       "foto": "nintendoWiiU.jpg"
     },
     {
       "id": 15,
       "nombre": "N.Switch",
-      "precio": 350.95,
+      "precio": "350.95",
       "foto": "nintendoSwitch.jpg"
     },
     {
       "id": 16,
       "nombre": "S.MasterS.",
-      "precio": 65.99,
+      "precio": "65.99",
       "foto": "SegaMasterSystem.jpg"
     },
     {
       "id": 17,
       "nombre": "S.Mega Drive",
-      "precio": 100.33,
+      "precio": "100.33",
       "foto": "SegaMegaDrive.jpg"
     },
     {
       "id": 18,
       "nombre": "S.CD",
-      "precio": 110.79,
+      "precio": "110.79",
       "foto": "SegaCD.jpg"
     },
     {
       "id": 19,
       "nombre": "S.Saturn",
-      "precio": 198.99,
+      "precio": "198.99",
       "foto": "SegaSaturn.jpg"
     },
     {
       "id": 20,
       "nombre": "S.Dreamcast",
-      "precio": 246.12,
+      "precio": "246.12",
       "foto": "SegaDreamcast.jpg"
-    },
-    {
-      "id": 21,
-      "nombre": "hola mundo",
-      "precio": "75.55",
-      "foto": "ps4.jpg"
     }
   ],
   "carrito": [
