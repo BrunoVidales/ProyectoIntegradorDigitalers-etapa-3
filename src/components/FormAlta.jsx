@@ -47,7 +47,7 @@ const FormAlta = ({productoAEditar, setProductoAEditar}) => {
 
   return (
     <form onSubmit={handleSubmit} className='alta d-flex flex-column align-items-center bg-light rounded-4 p-5 mb-5'>
-      <h2 className= 'mb-4'>{form.id ? 'Agregar' : 'Editar'}</h2>
+      <h2 className= 'mb-4'>{form.id ? 'Editar' : 'Agregar'}</h2>
       <label htmlFor='nombre'>Nombre del producto</label>
       <input className='input-alta rounded-4' id='nombre' name='nombre' type='text' onChange={handleChange} value={form.nombre}/>
 

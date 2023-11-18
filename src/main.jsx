@@ -43,6 +43,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <>
                 <Navbar />
                 <Inicio />
+                <Footer />
               </>
               } />
               <Route path='/consolas' element={
@@ -55,18 +56,21 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <>
                 <NavbarSecundario />
                 <Nosotros />
+                <Footer />
               </>
               } />
               <Route path='/contacto' element={
               <>
                 <NavbarSecundario />
                 <Contacto />
+                <Footer />
               </>
               } />
               <Route path='/alta' element={
                 <>
                   <NavbarSecundario />
                   <Alta />
+                  <Footer />
                 </>
                 } />
               <Route path='/carrito' element={
@@ -83,7 +87,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               } />
             </Routes>
           </main>
-          <Footer />
         </BrowserRouter>
       </CarritoProvider>
     </ProductosProvider>

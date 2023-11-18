@@ -8,7 +8,7 @@ import Swal from 'sweetalert2'
 const ProductosContext = createContext()
 
 /* 2do paso: El armado del provider */
-const url = 'https://654fd57a358230d8f0cdbd8d.mockapi.io/productos/'
+const url = 'https://654fd57a358230d8f0cdbd8d.mockapi.io/productos/' || 'http://localhost:8080/productos/'
 console.log('URL:', url);
 
 const ProductosProvider = ({children}) => {

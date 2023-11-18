@@ -14,7 +14,7 @@ const CarritoContext = createContext();
 
 /* 2do paso: Armado del provider */
 
-const url = 'https://654fd57a358230d8f0cdbd8d.mockapi.io/carrito'
+const url = 'https://654fd57a358230d8f0cdbd8d.mockapi.io/carrito/'
 
 
 const CarritoProvider = ({ children }) => {

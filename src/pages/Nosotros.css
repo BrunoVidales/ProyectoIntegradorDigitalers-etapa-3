@@ -5,3 +5,56 @@
     height: 5rem;
     color: var(--color--blanco);
 }
+
+.span-nosotros {
+    color: var(--color-verde-clarito);
+    font-weight: 300;
+}
+
+.sobreNosotros-imagen {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateX(1%);
+    transition: .3s;
+    height: 200px;
+    width: 15%;
+}
+
+.sobreNosotros1-imagen {
+    background-image: url('../../public/img/sobreNosotros.png');
+    border-radius:  100% 0% 0% 100% / 0% 100% 0% 100%;
+}
+.sobreNosotros2-imagen {
+    border-radius: 0% 100% 100% 0% / 49% 0% 100% 51%;
+    background-image: url('../../public/img/sobreNosotros2.svg');
+    transform: translateX(5%);
+    box-shadow: -3px -3px 17px black;
+}
+
+.sobreNosotros2-imagen:hover {
+    transform: translateX(1%);
+    box-shadow: none;
+}
+
+.logo-nosotros {
+    background-image: url('../../public/img/logo/Logo-consoleye.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50% 50% 50% 50% / 48% 50% 50% 52%;
+    height: 210px;
+    width: 210px;
+    background-color: var(--background);
+}
+
+.section-nosotros:nth-of-type(2) ul {
+    background-color: var(--color-verde-clarito);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+

@@ -113,10 +113,6 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </li>
-                  <li className="p-2 switch">
-                    <i className="fa-solid fa-sun" style={{color: "#5d6574"}}></i>
-                    <i className="fa-solid fa-moon" style={{color: "#5d6574"}}></i>
-                  </li>
               </ul>
             </div> 
         </nav> 
